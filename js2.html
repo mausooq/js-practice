@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval and time out </title>
+</head>
+<body>
+<div class="container">
+    Time now is <span id="time"></span>
+</div>
+<script>
+    // console.log('my name is mausooq');
+    // setTimeout(great,2000,"sajipa")
+
+    // setInterval(great,1000,"sajipa");
+    // function great(place){
+    //     console.log('i am from '+place);
+    // }
+   function displayTime(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,1000);
+</script>
+</body>
+</html>

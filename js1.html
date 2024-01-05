@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+    <style>
+        #btn{
+        background-color: red;
+        color: white;
+        padding: 10px 24px;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>my name is mausooq</h1>
+      <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+        reprehenderit ipsum quisquam atque eum, explicabo molestias amet
+        laudantium, alias rem sit incidunt reiciendis! Corporis culpa itaque
+        sequi, iure rem soluta, repudiandae voluptate minus inventore maiores
+        odit, eligendi esse magni. Dolores sequi porro, quos magnam, illo
+        inventore ipsam, eius vitae omnis architecto molestiae beatae modi odio
+        consectetur quod voluptas accusamus ut labore dolorem tempore facere.
+        Perspiciatis, veniam voluptates quisquam corporis dolore ipsa quia,
+        quaerat sed recusandae adipisci doloribus aut aspernatur dicta pariatur
+        sit deserunt id labore excepturi repudiandae minima facilis molestiae,
+        explicabo numquam eligendi? Optio labore vero facere ex necessitatibus
+        quidem nulla ut architecto corporis asperiores alias totam, voluptate
+        aliquid harum modi veniam fugiat inventore, cum rem corrupti iusto
+        provident molestiae qui iste! Deleniti temporibus praesentium dolorum
+        doloremque? Dolor quos alias consequuntur possimus minima rem! Minus
+        reiciendis delectus placeat perferendis cum repellendus, corrupti nihil,
+        unde deleniti similique dolores numquam exercitationem aliquam quisquam
+        temporibus laudantium doloribus pariatur. Reprehenderit, nihil corrupti
+        dignissimos, voluptatum, asperiores consectetur similique maiores iusto
+        quod autem esse? Optio vitae assumenda maiores, earum eaque cupiditate
+        recusandae nisi eum exercitationem, repellat dolores accusamus porro
+        esse sequi odit praesentium voluptates consequuntur, tenetur numquam
+        nesciunt ipsa deleniti ratione fugit? Magnam veniam ipsum atque
+        dignissimos iusto perspiciatis aperiam corporis similique quam eos,
+        debitis hic explicabo obcaecati commodi distinctio eveniet aliquam illo.
+        Culpa tenetur reprehenderit, vero error sint, aliquid cumque veniam
+        accusantium architecto fuga totam, possimus debitis atque molestiae ad
+        qubuttos! Enim, nemo natus quas incidunt autem ab aut laboriosam quidem
+        iusto deleniti ex ea reiciendis eveniet beatae eius unde soluta odio.
+        Fugit quam eos tempore? Soluta deleniti, cum consequatur quisquam,
+        molestias illum sint perspiciatis aut reiciendis, cumque neque. Laborum
+        quis consequuntur, totam accusamus laboriosam dolor iure expedita, dicta
+        autem voluptates nisi voluptatibus culpa repellat! Natus, perferendis
+        deleniti. Molestiae iure fuga sequi soluta commodi accusamus.
+      </p>
+      <button id="btn" onClick="hide()">show/hide</button>
+    </div>
+    <script>
+      let para=document.getElementById('para');
+      para.addEventListener('mouseover',function run(){
+        console.log("mouse on para")
+      })
+      let par=document.getElementById('para');
+      par.addEventListener('mouseout',function run(){
+        console.log("mouse not on para")
+      })
+     function hide(){
+      let btn=document.getElementById('btn');
+      let para=document.getElementById('para');
+      if(para.style.display!='none'){
+        para.style.display='none';
+      }
+      else{
+        para.style.display='block';
+      }
+    }
+    </script>
+  </body>
+</html>

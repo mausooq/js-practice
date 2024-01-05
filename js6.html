@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+<body>
+    <div class="con">
+        this is my coontainer
+
+    </div>
+    <script>
+        let  jsonobj={
+            name:'mausooq',
+            usn:'4pa21cs003',
+            place:'sajipa',
+            dept:'cse'
+        }
+
+        console.log(jsonobj);
+        let myjson=JSON.stringify(jsonobj);
+        console.log(jsonobj);
+        myjson= myjson.replace('sajipa','mangaloure');
+        console.log(myjson)
+        
+        newjson=JSON.parse(myjson)
+        console.log(newjson)
+    </script>
+</body>
+</html>
