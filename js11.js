@@ -1,3 +1,3 @@
 let a = 1;
-let b=5+4;
+const b=2;
 console.log(a+b); 
